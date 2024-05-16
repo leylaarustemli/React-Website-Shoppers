@@ -1,0 +1,51 @@
+.header1 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header1{
+  padding: 20px 0;
+    .left-header{
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        input{
+            border: none;
+        }
+    }
+
+}
+.fa-magnifying-glass{
+    color: grey;
+    font-size: 13px;
+}
+.center-header{
+    border: 2px solid black;
+    padding: 3px 16px;
+  display: flex;
+  align-items: center;
+  color: rgba(24, 23, 23, 0.684);
+  p{
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+
+}
+.right-header{
+    gap: 20px;
+    display: flex;
+    color: grey;
+}
+.header2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+    
+}
+.header2 ul li{
+    font-size: 13px;
+}

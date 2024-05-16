@@ -1,0 +1,40 @@
+.section1{
+    background-image: url("	https://preview.colorlib.com/theme/shoppers/images/hero_1.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    background-position: center center;
+    
+}
+.sect1-title{
+    float: right;
+    display: flex;
+    flex-direction: column;
+width: 50%;
+    justify-content: center;
+    margin-top: 200px;
+    padding-left: 100px;
+    h3{
+        font-size: 54px;
+        font-weight: 800px;
+    }
+    h2{
+        font-size: 58px;
+    }
+    p{
+        width: 500px;
+        font-size: 20px;
+        font-family: "Mukta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    button{
+        width: 120px;
+        padding: 8px 18px;
+        background-color: #7971ea;
+        margin-top: 25px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+}
