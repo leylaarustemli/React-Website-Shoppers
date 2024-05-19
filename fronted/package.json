@@ -18,7 +18,8 @@
     "react-helmet-async": "^2.0.5",
     "react-router": "^6.23.1",
     "react-router-dom": "^6.23.1",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

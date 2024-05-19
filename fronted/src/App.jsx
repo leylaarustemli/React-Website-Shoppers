@@ -5,6 +5,7 @@ import ROUTES from './Routes/routes'
 import MainContext from './Context/Context'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { HelmetProvider } from 'react-helmet-async'
 
 
 function App() {
@@ -29,12 +30,28 @@ setBasket([...basket])
     setBasket([...basket,newItem])
   }
  }
+ function deleteBasket(id){
+let target =basket.find((x)=>x._id==id)
+if(target.count>1){
+  target.count--
+  target.totalPrice=target.price*target.count
+  setBasket([...basket])
+}
+else{
+  let indexOfTarget=basket.indexOf(target)
+  basket.splice(indexOfTarget,1)
+  setBasket([...basket])
+}
+ }
 const contextData={
-  addToBasket,data,setData,basket,setBasket
+  addToBasket,data,setData,basket,setBasket,deleteBasket
 }
   return (
     <MainContext.Provider value={contextData}>
-    <RouterProvider router={router}/>
+   
+   <HelmetProvider>
+   <RouterProvider router={router}/>
+   </HelmetProvider>
     </MainContext.Provider>
   )
 }

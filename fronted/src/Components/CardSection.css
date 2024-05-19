@@ -47,3 +47,17 @@ span{
         border-radius: 8px;
     }
 }
+.card-footer a{
+    color: white;
+    background-color: rgb(156, 15, 149);
+   text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.cardsection .container input{
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 6px 0;
+    border-radius: 10px;
+}
